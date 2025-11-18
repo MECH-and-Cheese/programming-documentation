@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://mech-and-cheese.github.io/programming-documentation/best/controls/">
+        <link rel="canonical" href="https://mech-and-cheese.github.io/programming-documentation/mkdocs/markdown-formatting/">
       
       
-        <link rel="prev" href="../../frc/electrical/">
+        <link rel="prev" href="../project-structure/">
       
       
-        <link rel="next" href="../../resources/links/">
+        <link rel="next" href="../material-theme/">
       
       
       <link rel="icon" href="../../images/team-name-transparent.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Controls - MECH & Cheese Programming Documentation</title>
+        <title>Markdown Formatting - MECH & Cheese Programming Documentation</title>
       
     
     
@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#markdown-formatting-best-practices" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -104,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Controls
+              Markdown Formatting
             
           </span>
         </div>
@@ -230,18 +235,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -257,7 +264,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             MK Docs
@@ -271,7 +278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mkdocs/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   
@@ -294,7 +301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mkdocs/getting-started/" class="md-nav__link">
+      <a href="../getting-started/" class="md-nav__link">
         
   
   
@@ -317,7 +324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mkdocs/github/" class="md-nav__link">
+      <a href="../github/" class="md-nav__link">
         
   
   
@@ -340,7 +347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mkdocs/project-structure/" class="md-nav__link">
+      <a href="../project-structure/" class="md-nav__link">
         
   
   
@@ -360,10 +367,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../mkdocs/markdown-formatting/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Markdown Formatting
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -374,6 +403,116 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-headings" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Headings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-text-formatting" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Text Formatting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Lists
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Links
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-code-blocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Code Blocks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Tables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Images
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-blockquotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Blockquotes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-tips-for-clean-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Tips for Clean Documentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -386,7 +525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mkdocs/material-theme/" class="md-nav__link">
+      <a href="../material-theme/" class="md-nav__link">
         
   
   
@@ -409,7 +548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mkdocs/writing-guidelines/" class="md-nav__link">
+      <a href="../writing-guidelines/" class="md-nav__link">
         
   
   
@@ -432,7 +571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mkdocs/faq-troubleshooting/" class="md-nav__link">
+      <a href="../faq-troubleshooting/" class="md-nav__link">
         
   
   
@@ -596,20 +735,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -625,7 +762,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             BEST
@@ -636,17 +773,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../best/controls/" class="md-nav__link">
         
   
   
@@ -657,7 +787,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -709,6 +838,106 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-headings" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Headings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-text-formatting" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Text Formatting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Lists
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Links
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-code-blocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Code Blocks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Tables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Images
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-blockquotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Blockquotes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-tips-for-clean-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Tips for Clean Documentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -724,9 +953,151 @@
 
 
 
-  <h1>Controls</h1>
+<h1 id="markdown-formatting-best-practices">Markdown Formatting &amp; Best Practices</h1>
+<p>This page provides guidelines and examples for writing clean, consistent Markdown documentation for MECH &amp; Cheese. Following these practices ensures readability, maintainability, and a professional appearance on your MKDocs site.</p>
+<p>Each guideline includes the recommended code along with a preview of how it will appear on the site, when applicable.</p>
+<hr />
+<h2 id="1-headings">1. Headings</h2>
+<p>Use headings to organize content hierarchically:</p>
+<pre><code class="language-markdown"># Main Title (H1)
+## Section Title (H2)
+### Subsection Title (H3)
+#### Optional Sub-subsection (H4)
+</code></pre>
+<ul>
+<li>Only one # per page for the main title.</li>
+<li>Use headings consistently to structure content clearly.</li>
+</ul>
+<hr />
+<h2 id="2-text-formatting">2. Text Formatting</h2>
+<ul>
+<li>Bold important terms: <strong>PID Loop</strong> → PID Loop <code>**this bolds text!**</code></li>
+<li>Italicize emphasis: <em>important note</em> → important note <code>*this italicizes text!*</code></li>
+<li>Combine bold and italics: <strong><em>very important</em></strong> → very important <code>***this bolds and italicizes text!***</code></li>
+</ul>
+<hr />
+<h2 id="3-lists">3. Lists</h2>
+<p><strong>Unordered Lists</strong></p>
+<pre><code class="language-md">* First item
+* Second item
+  * Sub-item
+* Third item
+</code></pre>
+<ul>
+<li>First item</li>
+<li>Second item</li>
+<li>Sub-item</li>
+<li>Third item</li>
+</ul>
+<p><strong>Ordered Lists</strong></p>
+<pre><code class="language-md">1. Step one
+2. Step two
+   1. Sub-step
+3. Step three
+</code></pre>
+<ol>
+<li>Step one</li>
+<li>Step two</li>
+<li>Sub-step</li>
+<li>Step three</li>
+</ol>
+<hr />
+<h2 id="4-links">4. Links</h2>
+<p><strong>Internal Links (within the documentation)</strong></p>
+<pre><code class="language-md">[Chassis Overview](chassis/overview.md)
+</code></pre>
+<p><strong>External Links</strong></p>
+<pre><code class="language-md">[MECH &amp; Cheese GitHub](https://github.com/Jaegernauts5103/programming-documentation)
+</code></pre>
+<p><strong>Linking to Headings</strong></p>
+<pre><code class="language-md">[Motor Wiring](chassis/wiring.md#wiring-the-motors)
+</code></pre>
+<hr />
+<h2 id="5-code-blocks">5. Code Blocks</h2>
+<p><strong>Inline Code</strong></p>
+<p>Use backticks for inline code: <code>Use `git clone` to copy the repo</code></p>
+<p><strong>Fenced Code Blocks</strong></p>
+<pre><code class="language-md">```bash
+This is a fenced code block!
+It can span as many lines as I want.
 
-
+It can have gaps between lines.
+It can also have no gap between lines
+```
+</code></pre>
+<ul>
+<li>Always use fenced code blocks with triple backticks.</li>
+<li>Include the language (bash, python, etc.) for syntax highlighting.</li>
+<li>With Material theme, a copy button can appear automatically on fenced code blocks.</li>
+</ul>
+<hr />
+<h2 id="6-tables">6. Tables</h2>
+<pre><code class="language-md">| Component       | Description           | Notes               |
+|-----------------|-------------------|-------------------|
+| Neo Motor       | Drive motor        | 400 RPM max       |
+| Encoder         | Measures position  | Absolute, Rev     |
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Neo Motor</td>
+<td>Drive motor</td>
+<td>400 RPM max</td>
+</tr>
+<tr>
+<td>Encoder</td>
+<td>Measures position</td>
+<td>Absolute, Rev</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="7-images">7. Images</h2>
+<ul>
+<li>Place images in an images/ folder.</li>
+<li>Link using relative paths:</li>
+</ul>
+<pre><code class="language-md">![Motor Wiring Diagram](images/motor-wiring.png)
+</code></pre>
+<ul>
+<li>Add descriptive alt text for clarity.</li>
+</ul>
+<hr />
+<h2 id="8-blockquotes">8. Blockquotes</h2>
+<p>Use for notes, warnings, or tips</p>
+<pre><code class="language-md">&gt; ⚠️ Always disconnect power before working on wiring.
+&gt;
+&gt; Tip: Use a consistent color scheme for diagrams.
+</code></pre>
+<blockquote>
+<p>This is a blockquote.</p>
+<p>It can span multiple lines.</p>
+</blockquote>
+<hr />
+<h2 id="9-tips-for-clean-documentation">9. Tips for Clean Documentation</h2>
+<ul>
+<li>Keep sentences short and clear</li>
+<li>Break large sections into multiple pages if needed</li>
+<li>Preview regularly with mkdocs serve</li>
+<li>Use consistent terminology for subsystems, commands, and hardware</li>
+<li>Update links whenever pages are moved or renamed</li>
+</ul>
+<hr />
+<h2 id="10-summary">10. Summary</h2>
+<ul>
+<li>Following these Markdown formatting rules ensures that MECH &amp; Cheese documentation is:</li>
+<li>Professional and readable</li>
+<li>Easy to navigate and maintain</li>
+<li>Ready for new members to contribute quickly</li>
+<li>Fully compatible with MKDocs and Material theme features, including code copy buttons and syntax highlighting</li>
+</ul>
 
 
 
@@ -756,7 +1127,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../frc/electrical/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Electrical">
+          <a href="../project-structure/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Project Strucure">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -766,20 +1137,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Electrical
+                Project Strucure
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../resources/links/" class="md-footer__link md-footer__link--next" aria-label="Next: Resources">
+          <a href="../material-theme/" class="md-footer__link md-footer__link--next" aria-label="Next: Customizing the Material Theme">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Resources
+                Customizing the Material Theme
               </div>
             </div>
             <div class="md-footer__button md-icon">
