@@ -16,7 +16,7 @@ theme:
   favicon: images/team-name-transparent.png
 
 plugins:
-  - awesome-pages
+  # - awesome-pages
 
 nav:
   - Home: index.md
@@ -33,6 +33,7 @@ nav:
       - The Basics: frc/intro.md
       - Drivetrain: frc/drivetrain.md
       - Sensors: frc/sensors.md
+      - Electrical: frc/electrical.md
   - BEST:
       - Controls: best/controls.md
   - Resources: resources/links.md
