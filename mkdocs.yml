@@ -1,5 +1,8 @@
 site_name: MECH & Cheese Programming Documentation
+<<<<<<< HEAD
 use_directory_urls: false
+=======
+>>>>>>> fef3d771bd15689ca92d8a414dc0a5e4f76f6485
 site_url: https://mech-and-cheese.github.io/programming-documentation/
 theme:
   name: material
@@ -16,6 +19,7 @@ theme:
   logo: images/team-name-transparent.png
   favicon: images/team-name-transparent.png
 
+<<<<<<< HEAD
 
 markdown_extensions:
   - pymdownx.tabbed:
@@ -35,6 +39,12 @@ extra_css:
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+=======
+plugins:
+  - search
+  - encryptcontent
+  - awesome-pages
+>>>>>>> fef3d771bd15689ca92d8a414dc0a5e4f76f6485
 
 nav:
   - Home: index.md
@@ -51,6 +61,7 @@ nav:
       - The Basics: frc/intro.md
       - Drivetrain: frc/drivetrain.md
       - Sensors: frc/sensors.md
+<<<<<<< HEAD
       - Limelight:
           - Overview: frc/limelight/index.md
           - Concepts:
@@ -68,3 +79,11 @@ nav:
   - Resources: resources/links.md
 
 dev_addr: '127.0.0.1:8000'
+=======
+      - Electrical: frc/electrical.md
+  - BEST:
+      - Controls: best/controls.md
+  - Resources:
+      - Sources: resources/links.md
+      - Team Resources: resources/team-only-links.md
+>>>>>>> fef3d771bd15689ca92d8a414dc0a5e4f76f6485
