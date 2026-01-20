@@ -8,31 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://mech-and-cheese.github.io/programming-documentation/mkdocs/overview/">
+        <link rel="canonical" href="https://mech-and-cheese.github.io/programming-documentation/frc/limelight/implementations/chassis-align-2d/">
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../../concepts/coordinates/">
       
       
-        <link rel="next" href="../getting-started/">
+        <link rel="next" href="../advanced-3d/">
       
       
         
       
       
-      <link rel="icon" href="../../images/team-name-transparent.png">
+      <link rel="icon" href="../../../../images/team-name-transparent.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>Overview - MECH & Cheese Programming Documentation</title>
+        <title>2D Chassis Align - MECH & Cheese Programming Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction" class="md-skip">
+        <a href="#2d-chassis-alignment" class="md-skip">
           Skip to content
         </a>
       
@@ -94,9 +94,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="MECH &amp; Cheese Programming Documentation" class="md-header__button md-logo" aria-label="MECH & Cheese Programming Documentation" data-md-component="logo">
+    <a href="../../../.." title="MECH &amp; Cheese Programming Documentation" class="md-header__button md-logo" aria-label="MECH & Cheese Programming Documentation" data-md-component="logo">
       
-  <img src="../../images/team-name-transparent.png" alt="logo">
+  <img src="../../../../images/team-name-transparent.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              2D Chassis Align
             
           </span>
         </div>
@@ -215,9 +215,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="MECH &amp; Cheese Programming Documentation" class="md-nav__button md-logo" aria-label="MECH & Cheese Programming Documentation" data-md-component="logo">
+    <a href="../../../.." title="MECH &amp; Cheese Programming Documentation" class="md-nav__button md-logo" aria-label="MECH & Cheese Programming Documentation" data-md-component="logo">
       
-  <img src="../../images/team-name-transparent.png" alt="logo">
+  <img src="../../../../images/team-name-transparent.png" alt="logo">
 
     </a>
     MECH & Cheese Programming Documentation
@@ -244,7 +244,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -268,20 +268,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -302,7 +300,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -317,35 +315,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Overview
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../mkdocs/overview/" class="md-nav__link">
         
   
   
@@ -361,140 +334,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Introduction
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-this-documentation-covers" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What This Documentation Covers
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="What This Documentation Covers">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Getting Started
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-writing-documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Writing Documentation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-site-structure-navigation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Site Structure &amp; Navigation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-themes-styling" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Themes &amp; Styling
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-extensions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Extensions
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-version-control-deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. Version Control &amp; Deployment
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-team-workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7. Team Workflow
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#final-notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Final Notes
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -507,7 +346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/" class="md-nav__link">
+      <a href="../../../../mkdocs/getting-started/" class="md-nav__link">
         
   
   
@@ -535,7 +374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../github/" class="md-nav__link">
+      <a href="../../../../mkdocs/github/" class="md-nav__link">
         
   
   
@@ -563,7 +402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../project-structure/" class="md-nav__link">
+      <a href="../../../../mkdocs/project-structure/" class="md-nav__link">
         
   
   
@@ -591,7 +430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../markdown-formatting/" class="md-nav__link">
+      <a href="../../../../mkdocs/markdown-formatting/" class="md-nav__link">
         
   
   
@@ -619,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../material-theme/" class="md-nav__link">
+      <a href="../../../../mkdocs/material-theme/" class="md-nav__link">
         
   
   
@@ -647,7 +486,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../writing-guidelines/" class="md-nav__link">
+      <a href="../../../../mkdocs/writing-guidelines/" class="md-nav__link">
         
   
   
@@ -675,7 +514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../faq-troubleshooting/" class="md-nav__link">
+      <a href="../../../../mkdocs/faq-troubleshooting/" class="md-nav__link">
         
   
   
@@ -707,18 +546,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -739,7 +580,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -757,7 +598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frc/intro/" class="md-nav__link">
+      <a href="../../../intro/" class="md-nav__link">
         
   
   
@@ -785,7 +626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frc/drivetrain/" class="md-nav__link">
+      <a href="../../../drivetrain/" class="md-nav__link">
         
   
   
@@ -813,7 +654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frc/sensors/" class="md-nav__link">
+      <a href="../../../sensors/" class="md-nav__link">
         
   
   
@@ -841,7 +682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frc/electrical/" class="md-nav__link">
+      <a href="../../../electrical/" class="md-nav__link">
         
   
   
@@ -866,18 +707,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
         
           
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
@@ -898,7 +741,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -916,7 +759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frc/limelight/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -991,7 +834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frc/limelight/concepts/control-theory/" class="md-nav__link">
+      <a href="../../concepts/control-theory/" class="md-nav__link">
         
   
   
@@ -1019,7 +862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frc/limelight/concepts/coordinates/" class="md-nav__link">
+      <a href="../../concepts/coordinates/" class="md-nav__link">
         
   
   
@@ -1052,18 +895,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3_5_3" id="__nav_3_5_3_label" tabindex="0">
@@ -1084,7 +929,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_5_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1099,10 +944,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../frc/limelight/implementations/chassis-align-2d/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2D Chassis Align
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1118,6 +990,48 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-math" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Math
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#java-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Java Implementation
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1130,7 +1044,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frc/limelight/implementations/advanced-3d/" class="md-nav__link">
+      <a href="../advanced-3d/" class="md-nav__link">
         
   
   
@@ -1158,7 +1072,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frc/limelight/implementations/turret-tracking/" class="md-nav__link">
+      <a href="../turret-tracking/" class="md-nav__link">
         
   
   
@@ -1241,7 +1155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frc/limelight/reference/troubleshooting/" class="md-nav__link">
+      <a href="../../reference/troubleshooting/" class="md-nav__link">
         
   
   
@@ -1269,7 +1183,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frc/limelight/reference/video-library/" class="md-nav__link">
+      <a href="../../reference/video-library/" class="md-nav__link">
         
   
   
@@ -1367,7 +1281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../best/controls/" class="md-nav__link">
+      <a href="../../../../best/controls/" class="md-nav__link">
         
   
   
@@ -1402,7 +1316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../resources/links/" class="md-nav__link">
+      <a href="../../../../resources/links/" class="md-nav__link">
         
   
   
@@ -1439,6 +1353,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1447,10 +1363,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
+  <a href="#the-math" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Introduction
+        The Math
       
     </span>
   </a>
@@ -1458,104 +1374,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-this-documentation-covers" class="md-nav__link">
+  <a href="#java-implementation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What This Documentation Covers
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="What This Documentation Covers">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Getting Started
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-writing-documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Writing Documentation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-site-structure-navigation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Site Structure &amp; Navigation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-themes-styling" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Themes &amp; Styling
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-extensions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Extensions
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-version-control-deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. Version Control &amp; Deployment
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-team-workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7. Team Workflow
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#final-notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Final Notes
+        Java Implementation
       
     </span>
   </a>
@@ -1582,69 +1404,76 @@
   
 
 
-  <h1>Overview</h1>
+<h1 id="2d-chassis-alignment">2D Chassis Alignment</h1>
+<p>The most common use for the Limelight is pointing the drivetrain at a target. This uses a simple <strong>Proportional Controller (P-Loop)</strong>.</p>
+<hr />
+<h2 id="the-math">The Math</h2>
+<p>We want the robot to rotate until the target is centered (<code>tx = 0</code>).</p>
+<ul>
+<li><strong>If <code>tx</code> is positive (+):</strong> Target is to the Right -&gt; <strong>Turn Right</strong>.</li>
+<li><strong>If <code>tx</code> is negative (-):</strong> Target is to the Left -&gt; <strong>Turn Left</strong>.</li>
+</ul>
+<p>The speed is determined by the formula:</p>
+<div class="arithmatex">\[
+\text{Rotation} = \text{error} \times kP
+\]</div>
+<hr />
+<h2 id="java-implementation">Java Implementation</h2>
+<p>Copy this command into your robot project. It drives the robot based on vision error while the button is held.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">package</span><span class="w"> </span><span class="nn">frc.robot.commands</span><span class="p">;</span>
 
-<h2 id="introduction">Introduction</h2>
-<p>In November 2025, Team 5103 adopted <strong>MKDocs</strong> as our primary documentation platform. We chose MKDocs because it simplifies the writing process, reduces the intimidation often associated with documentation, and provides a streamlined, organized workflow for the entire team.</p>
-<p>This section of our documentation is designed to:</p>
-<ul>
-<li>Teach current and future members how to use MKDocs effectively  </li>
-<li>Establish long-term, maintainable documentation practices  </li>
-<li>Preserve the team’s knowledge base from season to season  </li>
-<li>Support other FRC teams interested in transitioning to MKDocs  </li>
-</ul>
-<p>Whether you're brand new to documentation or refining your workflow, this guide will walk you through everything you need to know.</p>
-<hr />
-<h2 id="what-this-documentation-covers">What This Documentation Covers</h2>
-<p>This MKDocs section will guide you through the major concepts, tools, and workflows needed to build professional, organized, and maintainable documentation. Topics include:</p>
-<h3 id="1-getting-started"><strong>1. Getting Started</strong></h3>
-<ul>
-<li>What MKDocs is and how it works  </li>
-<li>Installing MKDocs and required dependencies  </li>
-<li>Understanding the folder structure (<code>docs/</code>, <code>mkdocs.yml</code>, etc.)</li>
-</ul>
-<h3 id="2-writing-documentation"><strong>2. Writing Documentation</strong></h3>
-<ul>
-<li>Creating pages using Markdown  </li>
-<li>Formatting text, images, links, lists, and code blocks  </li>
-<li>Best practices for clarity and consistency</li>
-</ul>
-<h3 id="3-site-structure-navigation"><strong>3. Site Structure &amp; Navigation</strong></h3>
-<ul>
-<li>Editing the sidebar (<code>nav:</code> in <code>mkdocs.yml</code>)  </li>
-<li>Organizing pages into sections  </li>
-<li>Naming conventions and file placement</li>
-</ul>
-<h3 id="4-themes-styling"><strong>4. Themes &amp; Styling</strong></h3>
-<ul>
-<li>Using the Material for MKDocs theme  </li>
-<li>Customizing colors, fonts, icons, and features  </li>
-<li>Adding tabs, callouts, code blocks, and other UI enhancements</li>
-</ul>
-<h3 id="5-extensions"><strong>5. Extensions</strong></h3>
-<ul>
-<li>Useful Markdown and Material extensions  </li>
-<li>How to enable and configure them  </li>
-<li>Examples of common extensions (admonitions, emojis, search, etc.)</li>
-</ul>
-<h3 id="6-version-control-deployment"><strong>6. Version Control &amp; Deployment</strong></h3>
-<ul>
-<li>Using Git to store documentation  </li>
-<li>Branching strategies for docs  </li>
-<li>Deploying with GitHub Pages or another hosting provider  </li>
-<li>Automating builds and deployments</li>
-</ul>
-<h3 id="7-team-workflow"><strong>7. Team Workflow</strong></h3>
-<ul>
-<li>How Team 5103 organizes its documentation  </li>
-<li>Contributing guidelines for new members  </li>
-<li>Review and approval process for edits  </li>
-<li>Tips to make documentation a natural part of robot development</li>
-</ul>
-<hr />
-<h2 id="final-notes">Final Notes</h2>
-<p>Our goal is to ensure that every member—new or returning—can confidently contribute to high-quality documentation. By standardizing our process and sharing what we've learned, we hope to strengthen our team’s knowledge base and support other FRC teams looking to enhance their documentation practices.</p>
-<p>If you're ready to begin, head to the <strong>Getting Started</strong> section!</p>
+<span class="kn">import</span><span class="w"> </span><span class="nn">edu.wpi.first.math.controller.PIDController</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">edu.wpi.first.wpilibj2.command.Command</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">frc.robot.subsystems.DriveSubsystem</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">frc.robot.subsystems.VisionSubsystem</span><span class="p">;</span>
+
+<span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">LimelightAlign</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">Command</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">DriveSubsystem</span><span class="w"> </span><span class="n">m_drive</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">VisionSubsystem</span><span class="w"> </span><span class="n">m_vision</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// Tuning Constants</span>
+<span class="w">    </span><span class="c1">// kP: Start small (0.01) and increase until it oscillates</span>
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">kP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.035</span><span class="p">;</span><span class="w"> </span>
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">kI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">kD</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">PIDController</span><span class="w"> </span><span class="n">m_controller</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">PIDController</span><span class="p">(</span><span class="n">kP</span><span class="p">,</span><span class="w"> </span><span class="n">kI</span><span class="p">,</span><span class="w"> </span><span class="n">kD</span><span class="p">);</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">LimelightAlign</span><span class="p">(</span><span class="n">DriveSubsystem</span><span class="w"> </span><span class="n">drive</span><span class="p">,</span><span class="w"> </span><span class="n">VisionSubsystem</span><span class="w"> </span><span class="n">vision</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">m_drive</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">drive</span><span class="p">;</span>
+<span class="w">        </span><span class="n">m_vision</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vision</span><span class="p">;</span>
+<span class="w">        </span><span class="n">addRequirements</span><span class="p">(</span><span class="n">m_drive</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="nd">@Override</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">initialize</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">m_controller</span><span class="p">.</span><span class="na">reset</span><span class="p">();</span>
+<span class="w">        </span><span class="n">m_controller</span><span class="p">.</span><span class="na">setSetpoint</span><span class="p">(</span><span class="mf">0.0</span><span class="p">);</span><span class="w"> </span><span class="c1">// Target is center of screen</span>
+<span class="w">        </span><span class="n">m_controller</span><span class="p">.</span><span class="na">setTolerance</span><span class="p">(</span><span class="mf">1.0</span><span class="p">);</span><span class="w"> </span><span class="c1">// Allow 1 degree of error</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="nd">@Override</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">execute</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">m_vision</span><span class="p">.</span><span class="na">hasTarget</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kt">double</span><span class="w"> </span><span class="n">rotationOutput</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_controller</span><span class="p">.</span><span class="na">calculate</span><span class="p">(</span><span class="n">m_vision</span><span class="p">.</span><span class="na">getTX</span><span class="p">());</span>
+
+<span class="w">            </span><span class="c1">// Clamp speed (Max 50%) to prevent tipping</span>
+<span class="w">            </span><span class="c1">// Math.max/min ensures we don&#39;t go above 0.5 or below -0.5</span>
+<span class="w">            </span><span class="n">rotationOutput</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">max</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">min</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span><span class="w"> </span><span class="n">rotationOutput</span><span class="p">));</span>
+
+<span class="w">            </span><span class="c1">// Drive method: xSpeed, ySpeed, Rotation, FieldRelative</span>
+<span class="w">            </span><span class="n">m_drive</span><span class="p">.</span><span class="na">drive</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">rotationOutput</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">m_drive</span><span class="p">.</span><span class="na">stop</span><span class="p">();</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="nd">@Override</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">isFinished</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span><span class="w"> </span><span class="c1">// Run until button is released</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 
 
@@ -1674,7 +1503,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+          <a href="../../concepts/coordinates/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Coordinates">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1684,20 +1513,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Home
+                Coordinates
               </div>
             </div>
           </a>
         
         
           
-          <a href="../getting-started/" class="md-footer__link md-footer__link--next" aria-label="Next: Getting Started">
+          <a href="../advanced-3d/" class="md-footer__link md-footer__link--next" aria-label="Next: 3D Chassis Align">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Getting Started
+                3D Chassis Align
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1734,10 +1563,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.footer", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.footer", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

@@ -2,70 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://mech-and-cheese.github.io/programming-documentation/</loc>
-         <lastmod>2025-11-18</lastmod>
+         <lastmod>2026-01-20</lastmod>
     </url>
     <url>
          <loc>https://mech-and-cheese.github.io/programming-documentation/best/controls/</loc>
-         <lastmod>2025-11-18</lastmod>
+         <lastmod>2026-01-20</lastmod>
     </url>
     <url>
          <loc>https://mech-and-cheese.github.io/programming-documentation/frc/drivetrain/</loc>
-         <lastmod>2025-11-18</lastmod>
+         <lastmod>2026-01-20</lastmod>
     </url>
     <url>
          <loc>https://mech-and-cheese.github.io/programming-documentation/frc/electrical/</loc>
-         <lastmod>2025-11-18</lastmod>
+         <lastmod>2026-01-20</lastmod>
     </url>
     <url>
          <loc>https://mech-and-cheese.github.io/programming-documentation/frc/intro/</loc>
-         <lastmod>2025-11-18</lastmod>
+         <lastmod>2026-01-20</lastmod>
     </url>
     <url>
          <loc>https://mech-and-cheese.github.io/programming-documentation/frc/sensors/</loc>
-         <lastmod>2025-11-18</lastmod>
+         <lastmod>2026-01-20</lastmod>
+    </url>
+    <url>
+         <loc>https://mech-and-cheese.github.io/programming-documentation/frc/limelight/</loc>
+         <lastmod>2026-01-20</lastmod>
+    </url>
+    <url>
+         <loc>https://mech-and-cheese.github.io/programming-documentation/frc/limelight/concepts/control-theory/</loc>
+         <lastmod>2026-01-20</lastmod>
+    </url>
+    <url>
+         <loc>https://mech-and-cheese.github.io/programming-documentation/frc/limelight/concepts/coordinates/</loc>
+         <lastmod>2026-01-20</lastmod>
+    </url>
+    <url>
+         <loc>https://mech-and-cheese.github.io/programming-documentation/frc/limelight/implementations/advanced-3d/</loc>
+         <lastmod>2026-01-20</lastmod>
+    </url>
+    <url>
+         <loc>https://mech-and-cheese.github.io/programming-documentation/frc/limelight/implementations/chassis-align-2d/</loc>
+         <lastmod>2026-01-20</lastmod>
+    </url>
+    <url>
+         <loc>https://mech-and-cheese.github.io/programming-documentation/frc/limelight/implementations/turret-tracking/</loc>
+         <lastmod>2026-01-20</lastmod>
+    </url>
+    <url>
+         <loc>https://mech-and-cheese.github.io/programming-documentation/frc/limelight/reference/troubleshooting/</loc>
+         <lastmod>2026-01-20</lastmod>
+    </url>
+    <url>
+         <loc>https://mech-and-cheese.github.io/programming-documentation/frc/limelight/reference/video-library/</loc>
+         <lastmod>2026-01-20</lastmod>
     </url>
     <url>
          <loc>https://mech-and-cheese.github.io/programming-documentation/mkdocs/faq-troubleshooting/</loc>
-         <lastmod>2025-11-18</lastmod>
+         <lastmod>2026-01-20</lastmod>
     </url>
     <url>
          <loc>https://mech-and-cheese.github.io/programming-documentation/mkdocs/getting-started/</loc>
-         <lastmod>2025-11-18</lastmod>
+         <lastmod>2026-01-20</lastmod>
     </url>
     <url>
          <loc>https://mech-and-cheese.github.io/programming-documentation/mkdocs/github/</loc>
-         <lastmod>2025-11-18</lastmod>
+         <lastmod>2026-01-20</lastmod>
     </url>
     <url>
          <loc>https://mech-and-cheese.github.io/programming-documentation/mkdocs/markdown-formatting/</loc>
-         <lastmod>2025-11-18</lastmod>
+         <lastmod>2026-01-20</lastmod>
     </url>
     <url>
          <loc>https://mech-and-cheese.github.io/programming-documentation/mkdocs/material-theme/</loc>
-         <lastmod>2025-11-18</lastmod>
+         <lastmod>2026-01-20</lastmod>
     </url>
     <url>
          <loc>https://mech-and-cheese.github.io/programming-documentation/mkdocs/overview/</loc>
-         <lastmod>2025-11-18</lastmod>
+         <lastmod>2026-01-20</lastmod>
     </url>
     <url>
          <loc>https://mech-and-cheese.github.io/programming-documentation/mkdocs/project-structure/</loc>
-         <lastmod>2025-11-18</lastmod>
+         <lastmod>2026-01-20</lastmod>
     </url>
     <url>
          <loc>https://mech-and-cheese.github.io/programming-documentation/mkdocs/school-downloads/</loc>
-         <lastmod>2025-11-18</lastmod>
+         <lastmod>2026-01-20</lastmod>
     </url>
     <url>
          <loc>https://mech-and-cheese.github.io/programming-documentation/mkdocs/writing-guidelines/</loc>
-         <lastmod>2025-11-18</lastmod>
+         <lastmod>2026-01-20</lastmod>
     </url>
     <url>
          <loc>https://mech-and-cheese.github.io/programming-documentation/resources/links/</loc>
-         <lastmod>2025-11-18</lastmod>
+         <lastmod>2026-01-20</lastmod>
     </url>
     <url>
          <loc>https://mech-and-cheese.github.io/programming-documentation/resources/team-only-links/</loc>
-         <lastmod>2025-11-18</lastmod>
+         <lastmod>2026-01-20</lastmod>
     </url>
 </urlset>
