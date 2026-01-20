@@ -1,0 +1,80 @@
+/* docs/stylesheets/extra.css */
+
+
+
+/* 1. The Trigger Text (The word you hover over) */
+[data-tooltip] {
+  color: var(--md-primary-fg-color); /* Matches your site's header color */
+  font-weight: 700;                  /* Bold, but respecting theme font weight */
+  cursor: help;                      /* Question mark cursor */
+  position: relative;
+  text-decoration: underline dotted 2px; /* Thicker dotted line for visibility */
+  text-underline-offset: 2px;
+  transition: color 0.25s;
+}
+
+[data-tooltip]:hover {
+  color: var(--md-accent-fg-color); /* Slight color shift on hover (usually lighter) */
+}
+
+/* 2. The Tooltip Box */
+[data-tooltip]:after {
+  content: attr(data-tooltip);
+  
+  /* Positioning - centered above text */
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px); /* Start slightly lower for animation */
+  
+  /* Visual Design - Matching the Material Theme */
+  background-color: var(--md-default-fg-color);  /* High contrast background */
+  color: var(--md-default-bg-color);             /* High contrast text */
+  font-family: var(--md-text-font-family);       /* Uses site's font (Roboto) */
+  font-size: 0.75rem;                            /* Slightly smaller than body text */
+  line-height: 1.4;
+  padding: 8px 12px;
+  border-radius: 4px;                            /* Rounded corners */
+  width: max-content;
+  max-width: 250px;                              /* Prevents it from getting too wide */
+  white-space: normal;                           /* Allows text wrapping */
+  text-align: center;
+  
+  /* Material Shadow */
+  box-shadow: var(--md-shadow-z2);               /* Official Material elevation */
+  z-index: 100;
+  
+  /* Animation State: Hidden */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* 3. The Little Triangle Pointer */
+[data-tooltip]:before {
+  content: "";
+  position: absolute;
+  bottom: 115%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  
+  /* Triangle Shape */
+  border-width: 6px;
+  border-style: solid;
+  border-color: var(--md-default-fg-color) transparent transparent transparent;
+  
+  /* Animation State: Hidden */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 100;
+}
+
+/* 4. Hover State: Reveal */
+[data-tooltip]:hover:after,
+[data-tooltip]:hover:before {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0); /* Float up animation */
+}

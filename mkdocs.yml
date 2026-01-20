@@ -1,5 +1,6 @@
 site_name: MECH & Cheese Programming Documentation
-# site_url: https://sites.google.com/g.comalisd.org/mechsjaegernauts/home
+use_directory_urls: false
+site_url: https://mech-and-cheese.github.io/programming-documentation/
 theme:
   name: material
   features:
@@ -15,8 +16,25 @@ theme:
   logo: images/team-name-transparent.png
   favicon: images/team-name-transparent.png
 
-plugins:
-  - awesome-pages
+
+markdown_extensions:
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - md_in_html
+  - abbr
+  - attr_list
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
   - Home: index.md
@@ -33,6 +51,20 @@ nav:
       - The Basics: frc/intro.md
       - Drivetrain: frc/drivetrain.md
       - Sensors: frc/sensors.md
+      - Limelight:
+          - Overview: frc/limelight/index.md
+          - Concepts:
+            - Control Theory: frc/limelight/concepts/control-theory.md
+            - Coordinates: frc/limelight/concepts/coordinates.md
+          - Implementations:
+            - 2D Chassis Align: frc/limelight/implementations/chassis-align-2d.md
+            - 3D Chassis Align: frc/limelight/implementations/advanced-3d.md
+            - Turret Tracking: frc/limelight/implementations/turret-tracking.md
+          - References:
+            - Troubleshooting: frc/limelight/reference/troubleshooting.md
+            - Video Library: frc/limelight/reference/video-library.md
   - BEST:
       - Controls: best/controls.md
   - Resources: resources/links.md
+
+dev_addr: '127.0.0.1:8000'

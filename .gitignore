@@ -1,0 +1,18 @@
+# Ignore the build output directory
+site/
+
+# Ignore the Python Virtual Environment (The 10k files!)
+venv/
+.venv/
+env/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore System files
+.DS_Store
+Thumbs.db
+
+# Ignore VS Code settings (Optional, but recommended)
+.vscode/
