@@ -4,6 +4,7 @@ use_directory_urls: false
 =======
 >>>>>>> fef3d771bd15689ca92d8a414dc0a5e4f76f6485
 site_url: https://mech-and-cheese.github.io/programming-documentation/
+repo_url: https://github.com/MECH-and-Cheese/programming-documentation/
 theme:
   name: material
   features:
