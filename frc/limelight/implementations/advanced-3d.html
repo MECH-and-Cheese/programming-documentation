@@ -8,31 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://mech-and-cheese.github.io/programming-documentation/frc/limelight/index.html">
+        <link rel="canonical" href="https://mech-and-cheese.github.io/programming-documentation/frc/limelight/implementations/advanced-3d.html">
       
       
-        <link rel="prev" href="../tuning/limelight.html">
+        <link rel="prev" href="chassis-align-2d.html">
       
       
-        <link rel="next" href="concepts/control-theory.html">
+        <link rel="next" href="turret-tracking.html">
       
       
         
       
       
-      <link rel="icon" href="../../images/team-name-transparent.png">
+      <link rel="icon" href="../../../images/team-name-transparent.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Overview - MECH & Cheese Programming Documentation</title>
+        <title>3D Chassis Align - MECH & Cheese Programming Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#limelight-vision-system" class="md-skip">
+        <a href="#advanced-3d-tracking-apriltags" class="md-skip">
           Skip to content
         </a>
       
@@ -94,9 +94,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="MECH &amp; Cheese Programming Documentation" class="md-header__button md-logo" aria-label="MECH & Cheese Programming Documentation" data-md-component="logo">
+    <a href="../../../index.html" title="MECH &amp; Cheese Programming Documentation" class="md-header__button md-logo" aria-label="MECH & Cheese Programming Documentation" data-md-component="logo">
       
-  <img src="../../images/team-name-transparent.png" alt="logo">
+  <img src="../../../images/team-name-transparent.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              3D Chassis Align
             
           </span>
         </div>
@@ -215,9 +215,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="MECH &amp; Cheese Programming Documentation" class="md-nav__button md-logo" aria-label="MECH & Cheese Programming Documentation" data-md-component="logo">
+    <a href="../../../index.html" title="MECH &amp; Cheese Programming Documentation" class="md-nav__button md-logo" aria-label="MECH & Cheese Programming Documentation" data-md-component="logo">
       
-  <img src="../../images/team-name-transparent.png" alt="logo">
+  <img src="../../../images/team-name-transparent.png" alt="logo">
 
     </a>
     MECH & Cheese Programming Documentation
@@ -244,7 +244,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../index.html" class="md-nav__link">
+      <a href="../../../index.html" class="md-nav__link">
         
   
   
@@ -318,7 +318,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mkdocs/overview.html" class="md-nav__link">
+      <a href="../../../mkdocs/overview.html" class="md-nav__link">
         
   
   
@@ -346,7 +346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mkdocs/getting-started.html" class="md-nav__link">
+      <a href="../../../mkdocs/getting-started.html" class="md-nav__link">
         
   
   
@@ -374,7 +374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mkdocs/github.html" class="md-nav__link">
+      <a href="../../../mkdocs/github.html" class="md-nav__link">
         
   
   
@@ -402,7 +402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mkdocs/project-structure.html" class="md-nav__link">
+      <a href="../../../mkdocs/project-structure.html" class="md-nav__link">
         
   
   
@@ -430,7 +430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mkdocs/markdown-formatting.html" class="md-nav__link">
+      <a href="../../../mkdocs/markdown-formatting.html" class="md-nav__link">
         
   
   
@@ -458,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mkdocs/material-theme.html" class="md-nav__link">
+      <a href="../../../mkdocs/material-theme.html" class="md-nav__link">
         
   
   
@@ -486,7 +486,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mkdocs/writing-guidelines.html" class="md-nav__link">
+      <a href="../../../mkdocs/writing-guidelines.html" class="md-nav__link">
         
   
   
@@ -514,7 +514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mkdocs/faq-troubleshooting.html" class="md-nav__link">
+      <a href="../../../mkdocs/faq-troubleshooting.html" class="md-nav__link">
         
   
   
@@ -598,7 +598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../intro.html" class="md-nav__link">
+      <a href="../../intro.html" class="md-nav__link">
         
   
   
@@ -626,7 +626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../drivetrain.html" class="md-nav__link">
+      <a href="../../drivetrain.html" class="md-nav__link">
         
   
   
@@ -654,7 +654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sensors.html" class="md-nav__link">
+      <a href="../../sensors.html" class="md-nav__link">
         
   
   
@@ -682,7 +682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../electrical.html" class="md-nav__link">
+      <a href="../../electrical.html" class="md-nav__link">
         
   
   
@@ -757,7 +757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tuning/general-tuning.html" class="md-nav__link">
+      <a href="../../tuning/general-tuning.html" class="md-nav__link">
         
   
   
@@ -785,7 +785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tuning/drivetrain.html" class="md-nav__link">
+      <a href="../../tuning/drivetrain.html" class="md-nav__link">
         
   
   
@@ -813,7 +813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tuning/autonomous.html" class="md-nav__link">
+      <a href="../../tuning/autonomous.html" class="md-nav__link">
         
   
   
@@ -841,7 +841,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tuning/limelight.html" class="md-nav__link">
+      <a href="../../tuning/limelight.html" class="md-nav__link">
         
   
   
@@ -923,19 +923,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
         
   
   
@@ -951,7 +942,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1011,7 +1001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="concepts/control-theory.html" class="md-nav__link">
+      <a href="../concepts/control-theory.html" class="md-nav__link">
         
   
   
@@ -1039,7 +1029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="concepts/coordinates.html" class="md-nav__link">
+      <a href="../concepts/coordinates.html" class="md-nav__link">
         
   
   
@@ -1072,18 +1062,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3_6_3" id="__nav_3_6_3_label" tabindex="0">
@@ -1104,7 +1096,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_6_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1122,7 +1114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="implementations/chassis-align-2d.html" class="md-nav__link">
+      <a href="chassis-align-2d.html" class="md-nav__link">
         
   
   
@@ -1147,10 +1139,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="implementations/advanced-3d.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3D Chassis Align
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="advanced-3d.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1166,6 +1185,82 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-botpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is BotPose?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What is BotPose?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blue-vs-red-alliance-origin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blue vs. Red Alliance Origin
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#megatag-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MegaTag Implementation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MegaTag Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#updating-the-odometry-swerve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Updating the Odometry (Swerve)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1178,7 +1273,7 @@
   
   
     <li class="md-nav__item">
-      <a href="implementations/turret-tracking.html" class="md-nav__link">
+      <a href="turret-tracking.html" class="md-nav__link">
         
   
   
@@ -1261,7 +1356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/troubleshooting.html" class="md-nav__link">
+      <a href="../reference/troubleshooting.html" class="md-nav__link">
         
   
   
@@ -1289,7 +1384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/video-library.html" class="md-nav__link">
+      <a href="../reference/video-library.html" class="md-nav__link">
         
   
   
@@ -1387,7 +1482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../best/controls.html" class="md-nav__link">
+      <a href="../../../best/controls.html" class="md-nav__link">
         
   
   
@@ -1469,7 +1564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../resources/links.html" class="md-nav__link">
+      <a href="../../../resources/links.html" class="md-nav__link">
         
   
   
@@ -1497,7 +1592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../resources/team-only-links.html" class="md-nav__link">
+      <a href="../../../resources/team-only-links.html" class="md-nav__link">
         
   
   
@@ -1545,6 +1640,70 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-botpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is BotPose?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What is BotPose?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blue-vs-red-alliance-origin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blue vs. Red Alliance Origin
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#megatag-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MegaTag Implementation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MegaTag Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#updating-the-odometry-swerve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Updating the Odometry (Swerve)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1563,66 +1722,53 @@
   
 
 
-<h1 id="limelight-vision-system">Limelight Vision System</h1>
-<h1 id="limelight-vision-system_1">Limelight Vision System</h1>
-<p>Welcome to the team's documentation for the Limelight Vision System. This module covers how our robot perceives the world, tracks AprilTags, and automates alignment for shooting and movement.</p>
-<div class="admonition abstract">
-<p class="admonition-title">Goal of this Module</p>
-<p>By the end of this section, you will be able to:</p>
-<ol>
-<li>Understand the difference between <strong>2D alignment</strong> and <strong>3D positioning</strong>.</li>
-<li>Write code to make a chassis or turret lock onto a target.</li>
-<li>Troubleshoot common issues like "the infinite spin" or "<strong data-tooltip="Static Friction -&gt; Stiction. The resistance or 'stickiness' that must be overcome to start moving two surfaces that are stationary against each other.">stiction</strong>."</li>
-</ol>
-</div>
+<h1 id="advanced-3d-tracking-apriltags">Advanced 3D Tracking (AprilTags)</h1>
+<p>Limelight 3 and newer software allow for full field localization. Instead of just aiming at a target, the robot knows exactly where it is on the field (X, Y, Z).</p>
 <hr />
-<h2 id="video-introduction">📹 Video Introduction</h2>
-<div class="admonition tip">
-<p class="admonition-title">Watch: System Overview (30s)</p>
-<p><iframe width="100%" height="400" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Limelight Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
-<p><em>In this video, we demonstrate the robot identifying an AprilTag on the Speaker and automatically aligning the turret.</em></p>
-</div>
-<hr />
-<h2 id="hardware-prerequisites">🛠️ Hardware Prerequisites</h2>
-<p>Before writing any code, ensure the hardware is ready. We currently use the <strong>Limelight 4</strong>.</p>
-<ol>
-<li><strong>Mounting:</strong> The camera must be mounted firmly. If it wobbles, our code will oscillate.</li>
-<li><strong>Ethernet:</strong> Static IP should be set to <code>10.TE.AM.11</code> with any zeros being excluded (e.g., <code>10.51.3.11</code>).</li>
-<li><strong>Pipeline Settings:</strong><ul>
-<li><strong>Pipeline 0:</strong> Standard AprilTag 2D (Used for Chassis).</li>
-<li><strong>Pipeline 1:</strong> Neural Network (Used for Game Piece Detection).</li>
-<li><strong>Pipeline 2:</strong> Standard AprilTag 3D (Used for Chassis).</li>
-<li><strong>Pipeline 3:</strong> High-Exposure AprilTag (Used for Turret).</li>
-</ul>
-</li>
-</ol>
-<div class="admonition warning">
-<p class="admonition-title">Crucial Step: Calibration</p>
-<p>If you are using <strong>3D features</strong> (BotPose), you <strong>must</strong> perform the ChAruco calibration and upload the correct field map <code>.fmap</code> file via the <a href="http://limelight.local:5801">Limelight Interface</a>. </p>
-<p>Without this, <code>tx</code> works, but distance calculations will be wrong.</p>
-</div>
-<hr />
-<h2 id="documentation-tree">📚 Documentation Tree</h2>
-<p>Select a topic below to get started:</p>
-<div class="grid cards">
+<h2 id="what-is-botpose">What is BotPose?</h2>
+<p>The Limelight returns a generic array called <code>BotPose</code>. It contains 6 numbers:</p>
 <ul>
-<li>
-<p><strong><a href="concepts/coordinates.html">Core Concepts</a></strong></p>
-<p>Learn the math behind <code>tx</code>, <code>ty</code>, and PID control loops. Start here if you are new to control theory.</p>
-</li>
-<li>
-<p><strong><a href="implementations/chassis-align-2d.html">Chassis Alignment</a></strong></p>
-<p>How to make the drivetrain auto-align to a target and stop at the perfect shooting distance.</p>
-</li>
-<li>
-<p><strong><a href="implementations/turret-tracking.html">Turret Tracking</a></strong></p>
-<p>Specialized code for the <code>TurretAlignCommand</code>, managing specific challenges like stiction and safety stops.</p>
-</li>
-<li>
-<p><strong><a href="reference/troubleshooting.html">Troubleshooting</a></strong></p>
-<p>Robot spinning in circles? Turret humming but not moving? Check the solutions here.</p>
-</li>
+<li><strong>X, Y, Z:</strong> Position in meters from the field origin (Blue Alliance Wall corner).</li>
+<li><strong>Roll, Pitch, Yaw:</strong> Rotation of the robot.</li>
 </ul>
+<h3 id="blue-vs-red-alliance-origin">Blue vs. Red Alliance Origin</h3>
+<div class="admonition warning">
+<p class="admonition-title">Coordinate System Chaos</p>
+<p>The field coordinate system changes depending on your alliance!</p>
+<ul>
+<li><strong>Blue Alliance:</strong> (0,0) is the right corner of the Blue Driver Station.</li>
+<li><strong>Red Alliance:</strong> (0,0) is the right corner of the <em>Blue</em> Driver Station (it stays fixed!).</li>
+</ul>
+<p>Always use the <code>BotPose_wpiblue</code> output to ensure your math stays consistent regardless of which side you are playing on.</p>
+</div>
+<hr />
+<h2 id="megatag-implementation">MegaTag Implementation</h2>
+<p>"MegaTag" is Limelight's algorithm for combining data from multiple tags to reduce jitter.</p>
+<h3 id="updating-the-odometry-swerve">Updating the Odometry (Swerve)</h3>
+<p>If you are using Swerve Drive, you can inject vision data into your odometry to correct for wheel slip.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Inside your DriveSubsystem.java</span>
+
+<span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">updateOdometry</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// 1. Update standard wheel odometry</span>
+<span class="w">    </span><span class="n">m_poseEstimator</span><span class="p">.</span><span class="na">update</span><span class="p">(</span><span class="n">getGyroRotation</span><span class="p">(),</span><span class="w"> </span><span class="n">getModulePositions</span><span class="p">());</span>
+
+<span class="w">    </span><span class="c1">// 2. Add Vision Measurement if available</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">LimelightHelpers</span><span class="p">.</span><span class="na">getTV</span><span class="p">(</span><span class="s">&quot;limelight&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Get the pose from the specific &quot;Blue&quot; array</span>
+<span class="w">        </span><span class="n">Pose2d</span><span class="w"> </span><span class="n">visionPose</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LimelightHelpers</span><span class="p">.</span><span class="na">getBotPose2d_wpiBlue</span><span class="p">(</span><span class="s">&quot;limelight&quot;</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// Get the timestamp (latency compensation)</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">timestamp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Timer</span><span class="p">.</span><span class="na">getFPGATimestamp</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="n">LimelightHelpers</span><span class="p">.</span><span class="na">getLatency_Pipeline</span><span class="p">(</span><span class="s">&quot;limelight&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">1000.0</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// Reject bad data (ambiguity check)</span>
+<span class="w">        </span><span class="c1">// Only trust vision if the tag is close and clear</span>
+<span class="w">        </span><span class="n">m_poseEstimator</span><span class="p">.</span><span class="na">addVisionMeasurement</span><span class="p">(</span><span class="n">visionPose</span><span class="p">,</span><span class="w"> </span><span class="n">timestamp</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>"Trust Standard Deviations" Vision is noisy. You can tell the PoseEstimator to trust Vision less than the Encoders by increasing the standard deviation values in the PoseEstimator constructor.</p>
 </div>
 
 
@@ -1653,7 +1799,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../tuning/limelight.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Limelight">
+          <a href="chassis-align-2d.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2D Chassis Align">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1663,20 +1809,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Limelight
+                2D Chassis Align
               </div>
             </div>
           </a>
         
         
           
-          <a href="concepts/control-theory.html" class="md-footer__link md-footer__link--next" aria-label="Next: Control Theory">
+          <a href="turret-tracking.html" class="md-footer__link md-footer__link--next" aria-label="Next: Turret Tracking">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Control Theory
+                Turret Tracking
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1713,12 +1859,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.footer", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tracking", "navigation.footer", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../../javascripts/mathjax.js"></script>
+        <script src="../../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
