@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://mech-and-cheese.github.io/programming-documentation/frc/tuning/drivetrain.html">
+        <link rel="canonical" href="https://mech-and-cheese.github.io/programming-documentation/frc/swerve/constants-configs.html">
       
       
-        <link rel="prev" href="general-tuning.html">
+        <link rel="prev" href="../sensors.html">
       
       
-        <link rel="next" href="autonomous.html">
+        <link rel="next" href="max-swerve-module.html">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Drivetrain - MECH & Cheese Programming Documentation</title>
+        <title>Architecture & Constants - MECH & Cheese Programming Documentation</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#drivetrain-tuning" class="md-skip">
+        <a href="#architecture-constants" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Drivetrain
+              Architecture & Constants
             
           </span>
         </div>
@@ -679,34 +679,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../electrical.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Electrical
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -720,17 +692,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Tuning
+    Swerve
   
 
     
@@ -741,44 +713,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Tuning
+    Swerve
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="general-tuning.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    General Tuning
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -803,7 +747,7 @@
   <span class="md-ellipsis">
     
   
-    Drivetrain
+    Architecture & Constants
   
 
     
@@ -814,14 +758,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="drivetrain.html" class="md-nav__link md-nav__link--active">
+      <a href="constants-configs.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Drivetrain
+    Architecture & Constants
   
 
     
@@ -847,10 +791,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mechanical-pre-check" class="md-nav__link">
+  <a href="#kinematics-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Mechanical Pre-Check
+        Kinematics Configuration
       
     </span>
   </a>
@@ -858,21 +802,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#basic-tuning-elevated" class="md-nav__link">
+  <a href="#how-it-works" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Basic Tuning (Elevated)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#characterizing-ks-on-carpet" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Characterizing kS (On Carpet)
+        How it works:
       
     </span>
   </a>
@@ -895,7 +828,202 @@
   
   
     <li class="md-nav__item">
-      <a href="autonomous.html" class="md-nav__link">
+      <a href="max-swerve-module.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Swerve Module
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="drive-subsystem.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Drive Subsystem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="control-auto.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teleop & Basic Autonomous Control
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tuning
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tuning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tuning/general-tuning.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General Tuning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tuning/swerve.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Swerve
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tuning/autonomous.html" class="md-nav__link">
         
   
   
@@ -923,7 +1051,7 @@
   
   
     <li class="md-nav__item">
-      <a href="limelight.html" class="md-nav__link">
+      <a href="../tuning/limelight.html" class="md-nav__link">
         
   
   
@@ -1491,53 +1619,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Resources
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Resources
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../resources/links.html" class="md-nav__link">
         
@@ -1546,7 +1627,7 @@
   <span class="md-ellipsis">
     
   
-    Links
+    Resources
   
 
     
@@ -1555,42 +1636,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../resources/team-only-links.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Team Only Links
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -1622,10 +1667,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mechanical-pre-check" class="md-nav__link">
+  <a href="#kinematics-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Mechanical Pre-Check
+        Kinematics Configuration
       
     </span>
   </a>
@@ -1633,21 +1678,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#basic-tuning-elevated" class="md-nav__link">
+  <a href="#how-it-works" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Basic Tuning (Elevated)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#characterizing-ks-on-carpet" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Characterizing kS (On Carpet)
+        How it works:
       
     </span>
   </a>
@@ -1674,36 +1708,45 @@
   
 
 
-<h1 id="drivetrain-tuning">Drivetrain Tuning</h1>
-<p>The drivetrain is the foundation of the robot. A poorly tuned drivetrain will negatively affect odometry, autonomous accuracy, and Limelight calculations.</p>
-<h3 id="mechanical-pre-check">Mechanical Pre-Check</h3>
-<p>Before tuning, ensure the following:
-* Gears are properly greased.
-* Swerve modules/gearboxes are free of debris ("gunk").
-* No mechanical binding is present.</p>
-<h3 id="basic-tuning-elevated">Basic Tuning (Elevated)</h3>
-<ol>
-<li><strong>Preparation:</strong> Place the robot on blocks so wheels spin freely. Set all Feedforward (SVA) and PID values to <span class="arithmatex">\(0\)</span>.</li>
-<li><strong>Find kV:</strong> * Start with <span class="arithmatex">\(kV = 1.0\)</span>.<ul>
-<li>Drive at max speed and monitor motor velocity via Shuffleboard.</li>
-<li>Increase <span class="arithmatex">\(kV\)</span> in increments of <span class="arithmatex">\(0.5\)</span> (or <span class="arithmatex">\(0.1\)</span> for fine-tuning) until the velocity stops increasing.</li>
-<li>Lower the value to the first point where that max speed was achieved.</li>
-</ul>
-</li>
-<li><strong>Find P:</strong><ul>
-<li>Start with a small value (e.g., <span class="arithmatex">\(1.0\)</span>).</li>
-<li>Increase until the wheels <strong>oscillate</strong> when returning to a zero setpoint.</li>
-<li>Decrease by very small increments until oscillation stops.</li>
-</ul>
-</li>
-</ol>
-<h3 id="characterizing-ks-on-carpet">Characterizing kS (On Carpet)</h3>
-<p>To find the voltage needed to break static friction:
-1. Place the robot on the floor.
-2. Using the <strong>REV Hardware Client</strong>, spin all drive motors in Duty Cycle mode.
-3. Slowly increase the value until the robot achieves slow, consistent movement.
-4. <strong>Calculate:</strong> Multiply that Duty Cycle value by <span class="arithmatex">\(12\)</span> to find your <span class="arithmatex">\(kS\)</span> voltage.</p>
-<div class="arithmatex">\[kS = \text{Duty Cycle} \times 12\]</div>
+<h1 id="architecture-constants">Architecture &amp; Constants</h1>
+<p>Before the robot can drive, the code needs to understand the physical reality of the robot. This is handled in <code>Constants.java</code> and <code>Configs.java</code>.</p>
+<h3 id="kinematics-configuration">Kinematics Configuration</h3>
+<p>Kinematics is the math that translates the robot's overall desired movement (e.g., "move forward and twist") into specific speeds and angles for each of the four wheels. </p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Distance between centers of right and left wheels on robot</span>
+<span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">kWheelBase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Units</span><span class="p">.</span><span class="na">inchesToMeters</span><span class="p">(</span><span class="mf">26.5</span><span class="p">);</span>
+<span class="c1">// Distance between front and back wheels on robot</span>
+<span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">kTrackWidth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Units</span><span class="p">.</span><span class="na">inchesToMeters</span><span class="p">(</span><span class="mf">26.5</span><span class="p">);</span>
+
+<span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">SwerveDriveKinematics</span><span class="w"> </span><span class="n">kDriveKinematics</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SwerveDriveKinematics</span><span class="p">(</span>
+<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="n">Translation2d</span><span class="p">(</span><span class="n">kWheelBase</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">kTrackWidth</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">),</span>
+<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="n">Translation2d</span><span class="p">(</span><span class="n">kWheelBase</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="n">kTrackWidth</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">),</span>
+<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="n">Translation2d</span><span class="p">(</span><span class="o">-</span><span class="n">kWheelBase</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">kTrackWidth</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">),</span>
+<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="n">Translation2d</span><span class="p">(</span><span class="o">-</span><span class="n">kWheelBase</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="n">kTrackWidth</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">));</span>
+</code></pre></div>
+<p><strong>How it works:</strong> We define the locations of the wheels relative to the exact center of the robot using an X-Y coordinate system. The front-left wheel is in the positive X (forward) and positive Y (left) quadrant.</p>
+<p>Motor Configuration &amp; Conversion Factors
+In <code>Configs.java</code>, we configure the SPARK MAX motor controllers. The most important part here is the <strong>Conversion Factor</strong>.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Use module constants to calculate conversion factors and feed forward gain.</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">drivingFactor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ModuleConstants</span><span class="p">.</span><span class="na">kWheelDiameterMeters</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">PI</span>
+<span class="w">        </span><span class="o">/</span><span class="w"> </span><span class="n">ModuleConstants</span><span class="p">.</span><span class="na">kDrivingMotorReduction</span><span class="p">;</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">turningFactor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">PI</span><span class="p">;</span>
+
+<span class="n">drivingConfig</span><span class="p">.</span><span class="na">encoder</span>
+<span class="w">        </span><span class="p">.</span><span class="na">positionConversionFactor</span><span class="p">(</span><span class="n">drivingFactor</span><span class="p">)</span><span class="w"> </span><span class="c1">// meters</span>
+<span class="w">        </span><span class="p">.</span><span class="na">velocityConversionFactor</span><span class="p">(</span><span class="n">drivingFactor</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">60.0</span><span class="p">);</span><span class="w"> </span><span class="c1">// meters per second</span>
+
+<span class="n">turningConfig</span><span class="p">.</span><span class="na">absoluteEncoder</span>
+<span class="w">        </span><span class="p">.</span><span class="na">positionConversionFactor</span><span class="p">(</span><span class="n">turningFactor</span><span class="p">)</span><span class="w"> </span><span class="c1">// radians</span>
+<span class="w">        </span><span class="p">.</span><span class="na">velocityConversionFactor</span><span class="p">(</span><span class="n">turningFactor</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">60.0</span><span class="p">);</span><span class="w"> </span><span class="c1">// radians per second</span>
+</code></pre></div>
+<h3 id="how-it-works">How it works:</h3>
+<p>By default, the NEO motors report their speed in "Rotations Per Minute" (RPM). However, WPILib's swerve math requires <strong>Meters Per Second (m/s)</strong> and <strong>Radians</strong>.
+- The <code>drivingFactor</code> takes the circumference of the wheel and divides it by the gear ratio. This tells the motor controller exactly how many meters the robot moves for every single rotation of the motor.
+- The <code>turningFactor</code> converts rotations into Radians (<span class="arithmatex">\(\pi\)</span> radians in a half-circle, <span class="arithmatex">\(2\pi\)</span> in a full circle).</p>
+<div class="admonition tip">
+<p class="admonition-title">PID Wrap Around</p>
+<p>In Configs.java, we enable .positionWrappingEnabled(true) with a range of 0 to turningFactor (which is <span class="arithmatex">\(2\pi\)</span>). This tells the PID controller that a rotation of 359 degrees is only 2 degrees away from 1 degree, preventing the wheel from doing a full unnecessary rotation to reach a target.</p>
+</div>
 
 
 
@@ -1733,7 +1776,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="general-tuning.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: General Tuning">
+          <a href="../sensors.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Sensors">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1743,20 +1786,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                General Tuning
+                Sensors
               </div>
             </div>
           </a>
         
         
           
-          <a href="autonomous.html" class="md-footer__link md-footer__link--next" aria-label="Next: Autonomous">
+          <a href="max-swerve-module.html" class="md-footer__link md-footer__link--next" aria-label="Next: The Swerve Module">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Autonomous
+                The Swerve Module
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1793,7 +1836,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.footer", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.footer", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
